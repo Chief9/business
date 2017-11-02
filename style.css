@@ -1,0 +1,96 @@
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.show {
+  display: block;
+}
+
+.selectionbox {
+  color: black;
+  margin-top: 80px;
+  margin-left: 7%;
+}
+
+.content {
+    background-color: white;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.mugs {
+  text-align: center;
+}
+
+.mugs img{
+  opacity: 1;
+  display: inline-block;
+  height: 300px;
+  width: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+div.product {
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+div.product:hover {
+    border: 1px solid black;
+}
+
+.product:hover .image {
+  opacity: 0.3;
+}
+
+.product:hover .middle {
+  opacity: 1;
+}
+
+.description {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .column {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (max-width: 350px) {
+  .column {
+    float: left;
+    width: 50%;
+  }
+}

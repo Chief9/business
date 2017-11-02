@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Overview</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="         crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<img src="images/logo.png" style="height: 50px">
+
+
+<div class="selectionbox">
+  <input type="radio" onclick="filterSelection('all')" name="category" checked> Show all
+  <input type="radio" onclick="filterSelection('red')" name="category"> Red
+  <input type="radio" onclick="filterSelection('blue')" name="category"> Blue
+  <input type="radio" onclick="filterSelection('black')" name="category"> Black
+  <input type="radio" onclick="filterSelection('cat')" name="category"> Cats
+  <input type="radio" onclick="filterSelection('rabbit')" name="category"> Rabbits
+  <input type="radio" onclick="filterSelection('horse')" name="category"> Horses
+  <input type="radio" onclick="filterSelection('text')" name="category"> Text
+
+</div>
+
+<div class="mugs">
+  <div class="row">
+    <div class="column red cat">
+      <div class="content">
+          <div class="product">
+            <img src="images/cat-red.jpg" alt="red">
+              <div class="middle">
+                <div class="description">CAT RED</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column red rabbit">
+      <div class="content">
+          <div class="product">
+            <img src="images/rabbit-red.jpg" alt="red">
+              <div class="middle">
+                <div class="description">RABBIT RED</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column red horse">
+      <div class="content">
+          <div class="product">
+            <img src="images/horse-red.jpg" alt="red">
+              <div class="middle">
+                <div class="description">HORSE RED</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column red text">
+      <div class="content">
+          <div class="product">
+            <img src="images/text-red.jpg" alt="red">
+              <div class="middle">
+                <div class="description">TEXT RED</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column blue cat">
+      <div class="content">
+          <div class="product">
+            <img src="images/cat-blue.jpg" alt="blue">
+              <div class="middle">
+                <div class="description">CAT BLUE</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column blue rabbit">
+      <div class="content">
+          <div class="product">
+            <img src="images/rabbit-blue.jpg" alt="blue">
+              <div class="middle">
+                <div class="description">RABBIT BLUE</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column blue horse">
+      <div class="content">
+          <div class="product">
+            <img src="images/horse-blue.jpg" alt="blue">
+              <div class="middle">
+                <div class="description">HORSE BLUE</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column blue text">
+      <div class="content">
+          <div class="product">
+            <img src="images/text-blue.jpg" alt="blue">
+              <div class="middle">
+                <div class="description">TEXT BLUE</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column black cat">
+      <div class="content">
+          <div class="product">
+            <img src="images/cat-black.jpg" alt="black">
+              <div class="middle">
+                <div class="description">CAT BLACK</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column black rabbit">
+      <div class="content">
+          <div class="product">
+            <img src="images/rabbit-black.jpg" alt="black">
+              <div class="middle">
+                <div class="description">RABBIT BLACK</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column black horse">
+      <div class="content">
+          <div class="product">
+            <img src="images/horse-black.jpg" alt="black">
+              <div class="middle">
+                <div class="description">HORSE BLACK</div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column black text">
+      <div class="content">
+          <div class="product">
+            <img src="images/text-black.jpg" alt="blue">
+              <div class="middle">
+                <div class="description">TEXT BLACK</div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+</script>
+
+</body>
+</html>
