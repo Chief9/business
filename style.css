@@ -112,7 +112,6 @@ li a:hover {
 
 div.product {
     border: 1px solid #ccc;
-    position: relative;
 }
 
 div.product:hover {
