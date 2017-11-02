@@ -1,3 +1,61 @@
+body{
+padding:0;
+margin:0;
+}
+
+.nav{
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+  width: auto;
+  height: 65px;
+  float: left;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+li {
+    float: ;
+    padding: 0px 0px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 400;
+    font-size: 200%;
+    float: right;
+}
+
+ Change the link color to #111 (black) on hover
+li a:hover {
+    color: #e3c618;
+}
+
+.empty{
+  height: 40px;
+}
+
 .column {
     float: left;
     width: 33%;
@@ -5,7 +63,7 @@
 }
 
 .row {
-    width: 95%;
+    width: 80%;
     margin: auto;
 }
 
@@ -55,7 +113,6 @@
 
 div.product {
     border: 1px solid #ccc;
-    position: relative;
 }
 
 div.product:hover {
