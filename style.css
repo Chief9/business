@@ -1,6 +1,10 @@
 body{
 padding:0;
+<<<<<<< HEAD
 margin:0;
+=======
+margin:0; 
+>>>>>>> f229b9ada35f2a3c3c840ada340b54e9b3e7f6db
 }
 
 .nav{
@@ -47,6 +51,7 @@ li a {
     float: right;
 }
 
+<<<<<<< HEAD
  Change the link color to #111 (black) on hover
 li a:hover {
     color: #e3c618;
@@ -54,6 +59,14 @@ li a:hover {
 
 .empty{
   height: 40px;
+=======
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: #e3c618;
+}
+.empty{
+  height: 100px;
+>>>>>>> f229b9ada35f2a3c3c840ada340b54e9b3e7f6db
 }
 
 .column {
