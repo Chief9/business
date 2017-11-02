@@ -8,18 +8,52 @@
 <body>
 
 
-<img src="images/logo.png" style="height: 50px">
-
-
 <div class="selectionbox">
-  <input type="radio" onclick="filterSelection('all')" name="category" checked> Show all
-  <input type="radio" onclick="filterSelection('red')" name="category"> Red
-  <input type="radio" onclick="filterSelection('blue')" name="category"> Blue
-  <input type="radio" onclick="filterSelection('black')" name="category"> Black
-  <input type="radio" onclick="filterSelection('cat')" name="category"> Cats
-  <input type="radio" onclick="filterSelection('rabbit')" name="category"> Rabbits
-  <input type="radio" onclick="filterSelection('horse')" name="category"> Horses
-  <input type="radio" onclick="filterSelection('text')" name="category"> Text
+  <label>
+    <input type="radio" onclick="filterSelection('all')" name="category" checked>
+    <img src="images/mugs.png">
+  </label>
+
+  <label>
+    <input type="radio" onclick="filterSelection('red')" name="category">
+    <img src="images/red.png">
+  </label>
+
+  <label>
+    <input type="radio" onclick="filterSelection('blue')" name="category">
+    <img src="images/blue.png">
+  </label>
+
+  <label>
+    <input type="radio" onclick="filterSelection('black')" name="category">
+    <img src="images/black.png">
+  </label>
+
+  <label>
+    <input type="radio" onclick="filterSelection('cat')" name="category">
+    <img src="images/cat.png">
+  </label>
+
+  <label>
+    <input type="radio" onclick="filterSelection('rabbit')" name="category">
+    <img src="images/rabbit.png">
+  </label>
+
+  <label>
+    <input type="radio" onclick="filterSelection('horse')" name="category">
+    <img src="images/horse.png">
+  </label>
+
+  <label>
+    <input type="radio" onclick="filterSelection('text')" name="category">
+    <img src="images/text.png">
+  </label>
+
+<script>
+ $(".image-radio img").click(function(){
+     $(this).prev().attr('checked',true);
+ })
+</script>
 
 </div>
 
