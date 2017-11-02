@@ -1,11 +1,11 @@
 .column {
     float: left;
-    width: 33.33%;
+    width: 33%;
     display: none;
 }
 
 .row {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -38,8 +38,8 @@
 .mugs img{
   opacity: 1;
   display: inline-block;
-  height: 300px;
-  width: auto;
+  width: 100%;
+  /*height: 300px;*/
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -63,8 +63,8 @@ div.product:hover {
     border: 1px solid black;
 }
 
-.product:hover .image {
-  opacity: 0.3;
+.product:hover img {
+  opacity: 0.6;
 }
 
 .product:hover .middle {
@@ -73,12 +73,13 @@ div.product:hover {
 
 .description {
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
   color: white;
   font-weight: bold;
   font-size: 14px;
   padding: 16px 32px;
   border-radius: 5px;
+  width: 150px;
 }
 
 @media (max-width: 800px) {
@@ -88,9 +89,9 @@ div.product:hover {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .column {
     float: left;
-    width: 50%;
+    width: 100%;
   }
 }
