@@ -23,7 +23,9 @@
 
 <div class="foo">
   <div class="product-page">
-    <img src="images/cat-red.jpg" alt="red" class="product-image">
+    <a class="image-popup-vertical-fit" href="images/cat-red.jpg" title="Red Cat Mug">
+      <img src="images/cat-red.jpg" class="product-image">
+    </a>
     <div class="product-description">
       <h3>CAT RED</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -47,6 +49,21 @@
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.foo', { duration: 1000 });
 sr.reveal('.boo', { duration: 2000 });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  $('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    enableEscapeKey: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
+    }
+  });
+});
 </script>
 
 </body>
