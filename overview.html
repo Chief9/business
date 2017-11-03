@@ -4,6 +4,7 @@
   <title>Overview</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="         crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="dist/scrollreveal">
 </head>
 <body>
 
@@ -59,134 +60,159 @@
 
 <div class="mugs">
   <div class="row">
-    <div class="column red cat">
-      <div class="content">
-          <div class="product">
-            <img src="images/cat-red.jpg" alt="red">
-              <div class="middle">
-                <div class="description">CAT RED</div>
-              </div>
-          </div>
+     <div class="column red cat">
+        <div class="content">
+          <div class="foo">
+            <div class="product">
+              <img src="images/cat-red.jpg" alt="red">
+                <div class="middle">
+                  <div class="description">CAT RED</div>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
 
     <div class="column red rabbit">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/rabbit-red.jpg" alt="red">
               <div class="middle">
                 <div class="description">RABBIT RED</div>
               </div>
           </div>
+        </div>
       </div>
-    </div>
+   </div>
+
 
     <div class="column red horse">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/horse-red.jpg" alt="red">
               <div class="middle">
                 <div class="description">HORSE RED</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column red text">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/text-red.jpg" alt="red">
               <div class="middle">
                 <div class="description">TEXT RED</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column blue cat">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/cat-blue.jpg" alt="blue">
               <div class="middle">
                 <div class="description">CAT BLUE</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column blue rabbit">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/rabbit-blue.jpg" alt="blue">
               <div class="middle">
                 <div class="description">RABBIT BLUE</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column blue horse">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/horse-blue.jpg" alt="blue">
               <div class="middle">
                 <div class="description">HORSE BLUE</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column blue text">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/text-blue.jpg" alt="blue">
               <div class="middle">
                 <div class="description">TEXT BLUE</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column black cat">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/cat-black.jpg" alt="black">
               <div class="middle">
                 <div class="description">CAT BLACK</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column black rabbit">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/rabbit-black.jpg" alt="black">
               <div class="middle">
                 <div class="description">RABBIT BLACK</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column black horse">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/horse-black.jpg" alt="black">
               <div class="middle">
                 <div class="description">HORSE BLACK</div>
               </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class="column black text">
       <div class="content">
+        <div class="foo">
           <div class="product">
             <img src="images/text-black.jpg" alt="blue">
               <div class="middle">
                 <div class="description">TEXT BLACK</div>
               </div>
+            </div>
           </div>
       </div>
     </div>
@@ -227,6 +253,15 @@ function RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+</script>
+
+
+<script src="dist/scrollreveal.min.js"></script>
+
+<script type="text/javascript">
+window.sr = ScrollReveal({ reset: true });  
+
+sr.reveal('.foo', { duration: 1000 });
 </script>
 
 </body>
