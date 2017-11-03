@@ -135,20 +135,6 @@ div.product:hover {
   width: 150px;
 }
 
-@media (max-width: 800px) {
-  .column {
-    float: left;
-    width: 50%;
-  }
-}
-
-@media (max-width: 360px) {
-  .column {
-    float: left;
-    width: 100%;
-  }
-}
-
 label > input {
   visibility: hidden;
   position: absolute;
@@ -165,31 +151,6 @@ label > input:checked + img {
   height: 50px;
   width: 50px;
   margin: 50px;
-}
-
-@media (max-width: 360px) {
-  label > input + img {
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    margin: 20px;
-  }
-}
-
-@media (max-width: 360px) {
-  label > input:checked + img {
-      height: 30px;
-      width: 30px;
-      margin: 20px;
-      border-bottom: 1px solid black;
-      padding-bottom: 2px;
-  }
-}
-
-@media (max-width: 360px) {
-  .animal {
-      visibility: hidden;
-  }
 }
 
 .product-page {
@@ -236,7 +197,15 @@ label > input:checked + img {
   color: black;
 }
 
-@media (max-width: 800px) {
+.boo img {
+  margin-top: 10px;
+  border: none;
+  float: left;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (max-width: 800px) {
   .product-page img {
     width: 100%;
   }
@@ -244,10 +213,48 @@ label > input:checked + img {
   .product-description {
     width: 100%;
   }
+
+  .boo img {
+    width: 50%;
+  }
+
+  button {
+    width: 40%;
+    float: right;
+  }
+
+  .link-text {
+    display: none;
+    padding: 0;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
 }
 
-.boo img {
-  margin-top: 10px;
-  border: none;
-  float: left;
+@media all and (max-width: 360px) {
+  label > input + img {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+  }
+  label > input:checked + img {
+      height: 30px;
+      width: 30px;
+      margin: 20px;
+      border-bottom: 1px solid black;
+      padding-bottom: 2px;
+  }
+  .animal {
+      visibility: hidden;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+  }
 }
+
