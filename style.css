@@ -306,6 +306,58 @@ label > input:checked + img {
     float: left;
     width: 50%;
   }
+
+  li a {
+  font-weight: 400;
+  font-size: 150%;
+  }
+
+  .logo{
+  width: 25%;
+  height: 25%;
+  }
+
+  .contact-form{
+  position: relative;
+  left: 200px;
+  top: 40px;
+  margin-top: 80px;
+  width: 40%;
+  }
+
+  textarea {
+   margin: 10px;
+   font-family: 'Cutive Mono', monospace;
+   font-weight: 500;
+   font-size: 150%;
+   width: 200px;
+   display:inline;
+  }
+
+  .btn-primary {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 200;
+  float:left;
+  }
+ 
+ .contact-text{
+  width: 500px;
+  margin-left: 20px;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  color: #000;
+  }
+
+ h1{
+  margin-left: 300px;
+  margin-top: 50px;
+  font-size: 200%;
+  text-decoration: none;
+  width: 200px;
+ }
+
 }
 
 @media all and (max-width: 360px) {
