@@ -138,7 +138,7 @@ div.product:hover {
 h1{
   font-size: 400%;
   font-weight: 100;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Cutive Mono', monosace;
   color: #000;
   text-decoration: none;
   text-align: center;
@@ -384,4 +384,54 @@ label > input:checked + img {
   .animal {
     visibility: hidden;
   }
+
+   .contact-text{
+  position: relative;
+  left: 20px;
+  width: 200px;
+  margin-left: 20px;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+  color: #000;
+  }
+
+    .contact-form{
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 40%;
+  }
+
+    .logo{
+  width: 25%;
+  height: 25%;
+  }
+
+    li a {
+      display: block;
+      font-size: 100%;
+      margin: 10px;
+
+  }
+
+   h1{
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 200%;
+  width: 150px;
+ }
+
+ .btn-primary {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 200%;
+  font-weight: 200;
+
+}
+
+
+
+
 }
