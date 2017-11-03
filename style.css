@@ -4,16 +4,16 @@ nav{
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .logo{
@@ -28,26 +28,26 @@ ul {
 }
 
 li {
-    float: ;
-    padding: 0px 0px;
+  float: ;
+  padding: 0px 0px;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-decoration: none;
-    font-family: 'Cutive Mono', monospace;
-    font-weight: 400;
-    font-size: 200%;
-    float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 400;
+  font-size: 200%;
+  float: right;
 }
 
 li a:hover {
-    color: #e3c618;
+  color: #e3c618;
 }
 
 .empty{
@@ -55,20 +55,20 @@ li a:hover {
 }
 
 .column {
-    float: left;
-    width: 33%;
-    display: none;
+  float: left;
+  width: 33%;
+  display: none;
 }
 
 .row {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .show {
@@ -80,9 +80,9 @@ li a:hover {
 }
 
 .content {
-    background-color: white;
-    overflow: hidden;
-    margin: 20px;
+  background-color: white;
+  overflow: hidden;
+  margin: 20px;
 }
 
 .mugs {
@@ -108,12 +108,12 @@ li a:hover {
 }
 
 div.product {
-    border: 1px solid #ccc;
-    position: relative;
+  border: 1px solid #ccc;
+  position: relative;
 }
 
 div.product:hover {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .product:hover img {
@@ -135,18 +135,78 @@ div.product:hover {
   width: 150px;
 }
 
-@media (max-width: 800px) {
-  .column {
-    float: left;
-    width: 50%;
-  }
+h1{
+  font-size: 400%;
+  font-weight: 100;
+  font-family: 'Cutive Mono', monospace;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  width: 1900px;
 }
 
-@media (max-width: 360px) {
-  .column {
-    float: left;
-    width: 100%;
-  }
+.contact-text{
+  position: relative;
+  left: 200px;
+  top: 40px;
+  width: 1000px;
+  margin-left: 200px;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 500;
+  font-size: 200%;
+  color: #000;
+}
+
+
+.social{
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+.contact-form{
+  position: relative;
+  left: 400px;
+  top: 40px;
+  margin-top: 80px;
+  width: 100px;
+}
+
+textarea {
+  margin: 10px;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 500;
+  font-size: 200%;
+  width: 800px;
+}
+
+.senderName{
+}
+
+.senderAddress{
+  display: ;
+}
+
+.btn-primary {
+  background: #000;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 410px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 200%;
+  font-weight: 200;
+  border: none;
+  border-radius: 10px;
+  display: inline;
+}
+
+.btn-primary:hover {
+  border-style: solid;
+  border-width: 1px;
+  background-color: #fff;
+  color: #000;
 }
 
 label > input {
@@ -167,27 +227,109 @@ label > input:checked + img {
   margin: 50px;
 }
 
-@media (max-width: 360px) {
+.product-page {
+  text-align: center;
+  max-width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.product-page img {
+  width: 33.33%;
+  float: left;
+  margin-right: 5%;
+  border: 1px solid #ccc;
+}
+
+.product-description {
+  width: 100%;
+}
+
+.product-description h3, p {
+  text-align: justify;
+}
+
+.product-description button {
+  float: right;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.product-description button:hover {
+  background-color: white;
+  border-radius: black;
+  border: 2px solid black;
+  color: black;
+}
+
+.boo img {
+  margin-top: 10px;
+  border: none;
+  float: left;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (max-width: 800px) {
+  .product-page img {
+    width: 100%;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+
+  .boo img {
+    width: 50%;
+  }
+
+  button {
+    width: 40%;
+    float: right;
+  }
+
+  .link-text {
+    display: none;
+    padding: 0;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 360px) {
   label > input + img {
     cursor: pointer;
     height: 30px;
     width: 30px;
     margin: 20px;
   }
-}
 
-@media (max-width: 360px) {
   label > input:checked + img {
-      height: 30px;
-      width: 30px;
-      margin: 20px;
-      border-bottom: 1px solid black;
-      padding-bottom: 2px;
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
   }
-}
 
-@media (max-width: 360px) {
+  .column {
+    float: left;
+    width: 100%;
+  }
+
   .animal {
-      visibility: hidden;
+    visibility: hidden;
   }
 }
