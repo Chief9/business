@@ -191,3 +191,63 @@ label > input:checked + img {
       visibility: hidden;
   }
 }
+
+.product-page {
+  text-align: center;
+  max-width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.product-page img {
+  width: 33.33%;
+  float: left;
+  margin-right: 5%;
+  border: 1px solid #ccc;
+}
+
+.product-description {
+  width: 100%;
+}
+
+.product-description h3, p {
+  text-align: justify;
+}
+
+.product-description button {
+  float: right;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.product-description button:hover {
+  background-color: white;
+  border-radius: black;
+  border: 2px solid black;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .product-page img {
+    width: 100%;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+}
+
+.boo img {
+  margin-top: 10px;
+  border: none;
+  float: left;
+}

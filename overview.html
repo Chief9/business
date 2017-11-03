@@ -82,9 +82,9 @@
         <div class="content">
           <div class="foo">
             <div class="product">
-              <img src="images/cat-red.jpg" alt="red">
+              <a href="product_page.html"><img src="images/cat-red.jpg" alt="red"></a>
                 <div class="middle">
-                  <div class="description">CAT RED</div>
+                  <div class="description"><a href="product_page.html" style="text-decoration: none; color: white">BUY NOW</a></div>
                 </div>
             </div>
         </div>
@@ -277,7 +277,7 @@ function RemoveClass(element, name) {
 <script src="dist/scrollreveal.min.js"></script>
 
 <script type="text/javascript">
-window.sr = ScrollReveal({ reset: true });  
+window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.foo', { duration: 1000 });
 </script>
