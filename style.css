@@ -316,6 +316,17 @@ label > input:checked + img {
   }
 }
 
+@media all and (max-width: 600px) {
+  .boo img {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 360px) {
   label > input + img {
     cursor: pointer;
@@ -341,15 +352,4 @@ label > input:checked + img {
     visibility: hidden;
   }
 
-  .boo img {
-    width: 60%;
-  }
-
-  button {
-    width: 30%;
-  }
-
-  span {
-    visibility: hidden;
-  }
 }
