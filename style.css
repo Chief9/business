@@ -28,26 +28,26 @@ ul {
 }
 
 li {
-    float: ;
-    padding: 0px 0px;
+  float: ;
+  padding: 0px 0px;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-decoration: none;
-    font-family: 'Cutive Mono', monospace;
-    font-weight: 400;
-    font-size: 200%;
-    float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 400;
+  font-size: 200%;
+  float: right;
 }
 
 li a:hover {
-    color: #e3c618;
+  color: #e3c618;
 }
 
 .empty{
@@ -55,20 +55,20 @@ li a:hover {
 }
 
 .column {
-    float: left;
-    width: 33%;
-    display: none;
+  float: left;
+  width: 33%;
+  display: none;
 }
 
 .row {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .show {
@@ -80,9 +80,9 @@ li a:hover {
 }
 
 .content {
-    background-color: white;
-    overflow: hidden;
-    margin: 20px;
+  background-color: white;
+  overflow: hidden;
+  margin: 20px;
 }
 
 .mugs {
@@ -108,12 +108,12 @@ li a:hover {
 }
 
 div.product {
-    border: 1px solid #ccc;
-    position: relative;
+  border: 1px solid #ccc;
+  position: relative;
 }
 
 div.product:hover {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .product:hover img {
