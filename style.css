@@ -273,8 +273,16 @@ label > input:checked + img {
 
 .boo img {
   margin-top: 10px;
+  margin-right: 0;
+  height: 30px;
+  width: auto;
   border: none;
   float: left;
+}
+
+.boo p {
+  margin-top: 20px;
+  display: inline-block;
 }
 
 /*MEDIA QUERIES*/
@@ -289,11 +297,11 @@ label > input:checked + img {
   }
 
   .boo img {
-    width: 50%;
+    width: 40%;
   }
 
   button {
-    width: 40%;
+    width: 20%;
     float: right;
   }
 
@@ -330,6 +338,18 @@ label > input:checked + img {
   }
 
   .animal {
+    visibility: hidden;
+  }
+
+  .boo img {
+    width: 60%;
+  }
+
+  button {
+    width: 30%;
+  }
+
+  span {
     visibility: hidden;
   }
 }
