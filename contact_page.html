@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Mug.me: Contact </title>
+      <link rel="stylesheet" href="style.css" type="text/css" >
+      <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    </head>
+      <body>
+<div class="nav">
+  <ul>
+    <li><img src="images/logo_white.png" class="logo"></a></li>
+    <li><a href="contact.asp">Contact</a></li>
+    <li><a href="news.asp">Shop</a></li>
+    <li><a href="default.asp">Home</a></li>
+  </ul>
+</div>
+
+ <div class="empty">
+ </div>
+
+ <div class="contact">
+  <h1><a class="contact1">Contact</a></h1>
+
+  <p class="contact-text">If you want to contact us, fill in the form below or drop us a message on one of our social media accounts:<br /><br />
+
+  <a href="https://www.facebook.com/vekemanswebdevelopment" target='_blank'><img class="social" src="http://www.freeiconspng.com/uploads/facebook-logo-4.png" alt="Facebook"></a>
+  
+<a href="https://twitter.com/VekemansWebdevelopment" target='_blank'><img class="social" src="https://pbs.twimg.com/profile_images/531381005165158401/bUJYaSO9.png" alt="Twitter"></a>
+                       
+<a href="www.instagram.com/mug.me
+" target='_blank'><img class="social" src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" alt="Instagram"></a></p>
+
+<form action="/submit-message" class="contact-form">
+  <textarea required placeholder="Name" class="senderName"></textarea>
+  <textarea required placeholder="Email address" class="senderAddress"></textarea>
+  <textarea rows="10" cols="50" class="message" required placeholder="Your message" class"messageInput"></textarea>
+ </form>
+
+ <div class="submit-button">
+    <button type="submit" class="btn btn-block btn-primary" id="submitButton">Submit</button>
+ </div>
+
+<script type="text/javascript">
+   document.getElementById("submitButton").onclick = submit
+
+   function submit(){
+     var x = document.getElementsByTagName("textarea") [0].value
+     var y = document.getElementsByTagName("textarea") [1].value
+     var z = document.getElementsByTagName("textarea") [2].value
+     
+     var s = new RegExp("@")
+     var patt = s.test(y)
+     if(patt == true && x && z){
+        alert("Thank you for your message!") 
+     } else if(patt == false){
+         alert("Fill in a valid email address")
+     } else {
+         alert("Fill in all fields, please.")
+     }
+   }
+
+   function textContain(){
+     
+   }
+
+</script>
+
+    </body>
+  </html>
+
