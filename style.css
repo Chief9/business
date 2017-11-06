@@ -138,7 +138,7 @@ div.product:hover {
 h1{
   font-size: 400%;
   font-weight: 100;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Cutive Mono', monosace;
   color: #000;
   text-decoration: none;
   text-align: center;
@@ -166,7 +166,6 @@ h1{
 
 .contact-form{
   position: relative;
-/*  left: 400px;*/
   top: 40px;
   margin-top: 80px;
   width: 100px;
@@ -314,6 +313,58 @@ label > input:checked + img {
     float: left;
     width: 50%;
   }
+
+  li a {
+  font-weight: 400;
+  font-size: 150%;
+  }
+
+  .logo{
+  width: 25%;
+  height: 25%;
+  }
+
+  .contact-form{
+  position: relative;
+  left: 200px;
+  top: 40px;
+  margin-top: 80px;
+  width: 40%;
+  }
+
+  textarea {
+   margin: 10px;
+   font-family: 'Cutive Mono', monospace;
+   font-weight: 500;
+   font-size: 150%;
+   width: 200px;
+   display:inline;
+  }
+
+  .btn-primary {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 200;
+  float:left;
+  }
+
+ .contact-text{
+  width: 500px;
+  margin-left: 20px;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  color: #000;
+  }
+
+ h1{
+  margin-left: 300px;
+  margin-top: 50px;
+  font-size: 200%;
+  text-decoration: none;
+  width: 200px;
+ }
+
 }
 
 @media all and (max-width: 600px) {
@@ -350,6 +401,50 @@ label > input:checked + img {
 
   .animal {
     visibility: hidden;
+  }
+
+  .contact-text{
+    position: relative;
+    left: 20px;
+    width: 200px;
+    margin-left: 20px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+    color: #000;
+  }
+
+  .contact-form{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 40%;
+  }
+
+  .logo{
+    width: 25%;
+    height: 25%;
+  }
+
+  li a {
+    display: block;
+    font-size: 100%;
+    margin: 10px;
+  }
+
+  h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 200%;
+    width: 150px;
+  }
+
+ .btn-primary {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 200%;
+    font-weight: 200;
   }
 
 }
