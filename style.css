@@ -103,7 +103,6 @@ h1{
   color: #000;
 }
 
-
 .social{
   text-align: center;
   height: 50px;
@@ -112,7 +111,6 @@ h1{
 
 .contact-form{
   position: relative;
-/*  left: 400px;*/
   top: 40px;
   margin-top: 80px;
   width: 100px;
@@ -147,6 +145,42 @@ textarea {
   border-radius: 10px;
   display: inline;
 }
+
+.contact-form{
+  position: relative;
+  top: 40px;
+  margin-top: 80px;
+  width: 100px;
+}
+
+textarea {
+  margin: 10px;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 500;
+  font-size: 200%;
+  width: 800px;
+}
+
+.senderName{
+}
+
+.senderAddress{
+  display: ;
+}
+
+.btn-primary {
+  background: #000;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 410px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 200%;
+  font-weight: 200;
+  border: none;
+  border-radius: 10px;
+  display: inline;
 
 @media (max-width: 360px) {
   .column {
@@ -292,7 +326,7 @@ label > input:checked + img{
   font-weight: 200;
   float:left;
   }
- 
+
  .contact-text{
   width: 500px;
   margin-left: 20px;
@@ -349,39 +383,41 @@ label > input:checked + img{
   }
 
   .contact-text{
-  position: relative;
-  left: 20px;
-  width: 200px;
-  margin-left: 20px;
-  font-family: 'Calibri', sans-serif;
-  font-weight: 500;
-  font-size: 100%;
-  color: #000;
+    position: relative;
+    left: 20px;
+    width: 200px;
+    margin-left: 20px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+    color: #000;
   }
 
-    .contact-form{
-  position: relative;
-  left: 20px;
-  top: 20px;
-  width: 40%;
+  .contact-form{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 40%;
   }
 
-    .logo{
-  width: 25%;
-  height: 25%;
+  .logo{
+    width: 25%;
+    height: 25%;
   }
 
-    li a {
-      font-size: 100%;
-      margin: 10px;
-  }
+  li a {
+    display: block;
+    font-size: 100%;
+    margin: 10px;
+    font-size: 100%;
+    margin: 10px;
 
-   h1{
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 200%;
-  width: 150px;
- }
+  h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 200%;
+    width: 150px;
+  }
 
  .btn-primary {
   margin-top: 50px;
@@ -391,5 +427,6 @@ label > input:checked + img{
   font-weight: 200;
 
 }
+
 
 }
