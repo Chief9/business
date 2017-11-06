@@ -17,58 +17,159 @@
 
 h1{
 	font-size: 300%
-	
+\
+
 }
 
 p{
-	font-size: 400%;
+	font-size: 500%;
+	 text-shadow: 2px 2px black;
+
+	
 }
+
 
 .container{
 	width: 100%
 	height: 100%;
 	text-align: center;
 }
-	
+
+
+.nav{
+  z-index: 1;
+
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.nav .logo{
+  width: auto;
+  height: 65px;
+  float: left;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.nav li {
+  float: ;
+  padding: 0px 0px;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 400;
+  font-size: 200%;
+  float: right;
+}
+
+.nav li a:hover {
+  color: #e3c618;
+}
+
+
+.empty{
+  height: 100px;
+}
+
+.backgroundimg{
+z-index: -1;
+position: fixed;
+background-size: cover;
+}
+
+body {
+  color: white;
+  opacity: 100%; 
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+
+}
 
 	</style>
 
 </head>
 <body>
 
-<div class="container">
-<main role="main">
-  <section>
-    <div>
-      <h1> Our Philosophy</h1>
-    </div>
-  </section>
-
-  <section id="pinned-trigger1">
-    <div id="pinned-element1">
-      <p>WE</p>
-    </div> 
-  </section>
-
-  <section id="pinned-trigger2">
-    <div id="pinned-element2">
-      <p><img src="redheart.png"></p>
-    </div>
-  </section>
-  
-  <section id="pinned-trigger3">
-    <div id="pinned-trigger3">
-      <p><img src="mug.png"></p>
-    </div>
-  </section>
 
 
-
-
-
-
-</main>
+<div class="nav">
+  <ul >
+    <li><img src="images/logo_white.png" class="logo"></a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="overview.html">Shop</a></li>
+    </ul>
 </div>
+
+
+<img src="images/mugB.jpg" class="backgroundimg">
+</div>
+
+<div class="empty">
+</div>
+
+
+<div class="container">
+	<main role="main">
+	  <section>
+	    <div>
+	      <img src="images/arrow.png">
+	    </div>
+	  </section>
+
+	  <section id="pinned-trigger1">
+	    <div id="pinned-element1">
+	      <p> WE </p>
+	    </div> 
+	  </section>
+
+	  <section id="pinned-trigger2">
+	    <div id="pinned-element2">
+	      <p><img src="redheart.png"></p>
+	    </div>
+	  </section>
+	  
+	  <section id="pinned-trigger3">
+	    <div id="pinned-trigger3">
+	    	
+	      		<p><a href="contact.html"><img src="mug.png"></a></p>
+	  		
+	    </div>
+	  </section>
+
+
+
+	</main>
+</div>
+
+
+
+
 
 <script>
 	$( function(){
@@ -97,6 +198,7 @@ var scene3 = new ScrollMagic.Scene({
   duration: 900 
 })
 .setPin("#pinned-element3"); 
+
 
 controller.addScene([
   scene,
