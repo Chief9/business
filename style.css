@@ -51,7 +51,7 @@
 }
 
 .empty {
-  height: 100px;
+  height: 50px;
 }
 
 .column {
@@ -87,6 +87,8 @@
 }
 
 .mugs {
+  width: 80%;
+  margin: auto;
   text-align: center;
 }
 
