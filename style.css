@@ -109,7 +109,212 @@ label > input:checked + img{
   height: 50px;
   width: 50px;
   margin: 50px;
-  padding-bottom: 2px;
-  border-bottom: 2px solid black;
+}
+
+.product-page {
+  text-align: center;
+  max-width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.product-page img {
+  width: 33.33%;
+  float: left;
+  margin-right: 5%;
+  border: 1px solid #ccc;
+}
+
+.product-description {
+  width: 100%;
+}
+
+.product-description h3, p {
+  text-align: justify;
+}
+
+.product-description button {
+  float: right;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.product-description button:hover {
+  background-color: white;
+  border-radius: black;
+  border: 2px solid black;
+  color: black;
+}
+
+.boo img {
+  margin-top: 10px;
+  border: none;
+  float: left;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (max-width: 800px) {
+  .product-page img {
+    width: 100%;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+
+  .boo img {
+    width: 50%;
+  }
+
+  button {
+    width: 40%;
+    float: right;
+  }
+
+  .link-text {
+    display: none;
+    padding: 0;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  li a {
+  font-weight: 400;
+  font-size: 150%;
+  }
+
+  .logo{
+  width: 25%;
+  height: 25%;
+  }
+
+  .contact-form{
+  position: relative;
+  left: 200px;
+  top: 40px;
+  margin-top: 80px;
+  width: 40%;
+  }
+
+  textarea {
+   margin: 10px;
+   font-family: 'Cutive Mono', monospace;
+   font-weight: 500;
+   font-size: 150%;
+   width: 200px;
+   display:inline;
+  }
+
+  .btn-primary {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 200;
+  float:left;
+  }
+ 
+ .contact-text{
+  width: 500px;
+  margin-left: 20px;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  color: #000;
+  }
+
+ h1{
+  margin-left: 300px;
+  margin-top: 50px;
+  font-size: 200%;
+  text-decoration: none;
+  width: 200px;
+ }
+
+}
+
+@media all and (max-width: 360px) {
+  label > input + img {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+  }
+
+  label > input:checked + img {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+  }
+
+  .animal {
+    visibility: hidden;
+  }
+
+   .contact-text{
+  position: relative;
+  left: 20px;
+  width: 200px;
+  margin-left: 20px;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+  color: #000;
+  }
+
+    .contact-form{
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 40%;
+  }
+
+    .logo{
+  width: 25%;
+  height: 25%;
+  }
+
+    li a {
+      font-size: 100%;
+      margin: 10px;
+  }
+
+   h1{
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 200%;
+  width: 150px;
+ }
+
+ .btn-primary {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 200%;
+  font-weight: 200;
+
+}
+
+
+
+
 
 }
