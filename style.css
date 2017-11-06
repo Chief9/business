@@ -180,13 +180,6 @@ textarea {
   width: 800px;
 }
 
-.senderName{
-}
-
-.senderAddress{
-  display: ;
-}
-
 .btn-primary {
   background: #000;
   color: #fff;
@@ -206,12 +199,14 @@ label > input{
   visibility: hidden;
   position: absolute;
 }
+
 label > input + img{
   cursor: pointer;
   height: 30px;
   width: 30px;
   margin: 50px;
 }
+
 label > input:checked + img{
   height: 50px;
   width: 50px;
@@ -233,13 +228,6 @@ textarea {
   width: 800px;
 }
 
-.senderName{
-}
-
-.senderAddress{
-  display: ;
-}
-
 .btn-primary {
   background: #000;
   color: #fff;
@@ -253,6 +241,7 @@ textarea {
   border: none;
   border-radius: 10px;
   display: inline;
+}
 
 @media (max-width: 360px) {
   .column {
