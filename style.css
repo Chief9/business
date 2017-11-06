@@ -1,3 +1,59 @@
+.nav{
+ z-index: 1;
+
+}
+
+.nav ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #000;
+ position: fixed;
+ width: 100%;
+ z-index: 1;
+ top: 0;
+ left: 0;
+}
+
+.nav .logo{
+ width: auto;
+ height: 65px;
+ float: left;
+ padding: 0;
+ margin-left: 20px;
+ margin-top: 5px;
+ margin-bottom: 10px;
+ margin-right: 0;
+}
+
+.nav li {
+ float: ;
+ padding: 0px 0px;
+}
+
+.nav li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding-top: 20px;
+ padding-left: 50px;
+ padding-right: 50px;
+ text-decoration: none;
+ font-family: 'Cutive Mono', monospace;
+ font-weight: 400;
+ font-size: 200%;
+ float: right;
+}
+
+.nav li a:hover {
+ color: #e3c618;
+}
+
+.empty {
+  height: 100px;
+}
+
 .column {
     float: left;
     width: 33%;
@@ -144,6 +200,22 @@ textarea {
   border: none;
   border-radius: 10px;
   display: inline;
+}
+label > input{
+  visibility: hidden;
+  position: absolute;
+}
+label > input + img{
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 50px;
+}
+label > input:checked + img{
+  height: 50px;
+  width: 50px;
+  margin: 50px;
+}
 
 @media (max-width: 360px) {
   .column {
@@ -210,6 +282,11 @@ label > input:checked + img{
   border-radius: black;
   border: 2px solid black;
   color: black;
+}
+
+.product-description a {
+  color: white;
+  text-decoration: none;
 }
 
 .boo img {

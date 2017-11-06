@@ -2,11 +2,12 @@
 <html>
 <head>
       <title>Mug.me: Products</title>
-      <link rel="stylesheet" href="style.css" type="text/css" >
       <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="         crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="dist/scrollreveal">
       <script src="https://use.fontawesome.com/937272718b.js"></script>
+      <link rel="stylesheet" href="style.css" type="text/css" >
+
 </head>
 <body>
 
@@ -34,10 +35,10 @@
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="boo">
-        <span><img src="images/rating.png"></span>
-        <span><p>143 reviews</p></span>
-        <button><span class="link-text">Add to basket &nbsp;</span><i class="fa fa-shopping-basket" aria-hidden="true"></i></button>
+        <div class="boo">
+          <span><img src="images/rating.png"></span>
+          <span><p>143 reviews</p></span>
+          <button><span class="link-text">Add to basket &nbsp;</span><i class="fa fa-shopping-basket" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>
@@ -61,10 +62,11 @@ sr.reveal('.foo', { duration: 1000 });
 sr.reveal('.boo', { duration: 2000 });
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(document).ready(function() {
 
-  $('.image-popup-vertical-fit').magnificPopup({
+  $('.image-popup-vertical-fit').magnificPopup(
+  {
     type: 'image',
     closeOnContentClick: true,
     enableEscapeKey: true,
@@ -75,6 +77,6 @@ sr.reveal('.boo', { duration: 2000 });
   });
 });
 </script>
-
+ -->
 </body>
 </html>
