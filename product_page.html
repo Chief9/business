@@ -23,9 +23,11 @@
 
 <div class="foo">
   <div class="product-page">
-    <img src="images/cat-red.jpg" alt="red" class="product-image">
+    <a class="image-popup-vertical-fit" href="images/cat-red.jpg" title="Red Cat Mug">
+      <img src="images/cat-red.jpg" class="product-image">
+    </a>
     <div class="product-description">
-      <h3>CAT RED</h3>
+      <h3>CAT RED - &euro; 8,95</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -33,10 +35,20 @@
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <div class="boo">
-        <img src="images/rating.png">
+        <span><img src="images/rating.png"></span>
+        <span><p>143 reviews</p></span>
         <button><span class="link-text">Add to basket &nbsp;</span><i class="fa fa-shopping-basket" aria-hidden="true"></i></button>
       </div>
     </div>
+  </div>
+
+  <div class="product-page">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
 
@@ -47,6 +59,21 @@
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.foo', { duration: 1000 });
 sr.reveal('.boo', { duration: 2000 });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  $('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    enableEscapeKey: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
+    }
+  });
+});
 </script>
 
 </body>

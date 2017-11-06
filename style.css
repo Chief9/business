@@ -81,11 +81,71 @@ div.product:hover {
   width: 150px;
 }
 
-@media (max-width: 800px) {
-  .column {
-    float: left;
-    width: 50%;
-  }
+h1{
+  font-size: 400%;
+  font-weight: 100;
+  font-family: 'Cutive Mono', monospace;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  width: 1900px;
+}
+
+.contact-text{
+  position: relative;
+  left: 200px;
+  top: 40px;
+  width: 1000px;
+  margin-left: 200px;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 500;
+  font-size: 200%;
+  color: #000;
+}
+
+
+.social{
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+.contact-form{
+  position: relative;
+/*  left: 400px;*/
+  top: 40px;
+  margin-top: 80px;
+  width: 100px;
+}
+
+textarea {
+  margin: 10px;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: 500;
+  font-size: 200%;
+  width: 800px;
+}
+
+.senderName{
+}
+
+.senderAddress{
+  display: ;
+}
+
+.btn-primary {
+  background: #000;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 410px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 200%;
+  font-weight: 200;
+  border: none;
+  border-radius: 10px;
+  display: inline;
 }
 
 @media (max-width: 360px) {
@@ -157,8 +217,16 @@ label > input:checked + img{
 
 .boo img {
   margin-top: 10px;
+  margin-right: 0;
+  height: 30px;
+  width: auto;
   border: none;
   float: left;
+}
+
+.boo p {
+  margin-top: 20px;
+  display: inline-block;
 }
 
 /*MEDIA QUERIES*/
@@ -173,11 +241,11 @@ label > input:checked + img{
   }
 
   .boo img {
-    width: 50%;
+    width: 40%;
   }
 
   button {
-    width: 40%;
+    width: 20%;
     float: right;
   }
 
@@ -244,6 +312,17 @@ label > input:checked + img{
 
 }
 
+@media all and (max-width: 600px) {
+  .boo img {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 360px) {
   label > input + img {
     cursor: pointer;
@@ -269,7 +348,7 @@ label > input:checked + img{
     visibility: hidden;
   }
 
-   .contact-text{
+  .contact-text{
   position: relative;
   left: 20px;
   width: 200px;
@@ -312,9 +391,5 @@ label > input:checked + img{
   font-weight: 200;
 
 }
-
-
-
-
 
 }
