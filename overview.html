@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <title>Mug.me: Products</title>
-      <link rel="stylesheet" href="style.css" type="text/css" >
-      <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="         crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="dist/scrollreveal">
+  <title>Overview</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="         crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="dist/scrollreveal">
 </head>
 <body>
 
 <div class="nav">
   <ul>
     <li><img src="images/logo_white.png" class="logo"></a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact_page.html">Contact</a></li>
     <li><a href="overview.html">Shop</a></li>
-    <li><a href="home.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
   </ul>
 </div>
 
  <div class="empty">
  </div>
+
 
 <div class="selectionbox">
   <label>
@@ -44,29 +44,23 @@
 
   <label>
     <input type="radio" onclick="filterSelection('cat')" name="category">
-    <img src="images/cat.png" class="animal">
+    <img src="images/cat.png">
   </label>
 
   <label>
     <input type="radio" onclick="filterSelection('rabbit')" name="category">
-    <img src="images/rabbit.png" class="animal">
+    <img src="images/rabbit.png">
   </label>
 
   <label>
     <input type="radio" onclick="filterSelection('horse')" name="category">
-    <img src="images/horse.png" class="animal">
+    <img src="images/horse.png">
   </label>
 
   <label>
     <input type="radio" onclick="filterSelection('text')" name="category">
-    <img src="images/text.png" class="animal">
+    <img src="images/text.png">
   </label>
-
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous">
-</script>
 
 <script>
  $(".image-radio img").click(function(){
@@ -82,9 +76,9 @@
         <div class="content">
           <div class="foo">
             <div class="product">
-              <a href="product_page.html"><img src="images/cat-red.jpg" alt="red"></a>
+              <img src="images/cat-red.jpg" alt="red">
                 <div class="middle">
-                  <div class="description"><a href="product_page.html" style="text-decoration: none; color: white">BUY NOW</a></div>
+                  <div class="description">CAT RED</div>
                 </div>
             </div>
         </div>
@@ -277,10 +271,10 @@ function RemoveClass(element, name) {
 <script src="dist/scrollreveal.min.js"></script>
 
 <script type="text/javascript">
-
 window.sr = ScrollReveal();  
-sr.reveal('.foo' , 300 );
 
+sr.reveal('.foo', { duration: 1000 }, 50);
 </script>
+
 </body>
 </html>
